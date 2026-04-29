@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -95,6 +95,11 @@
             bindings = <&mkp MB5>;
             key-positions = <26 27>;
         };
+
+        LeftClick {
+            bindings = <&mkp MB1>;
+            key-positions = <15 16>;
+        };
     };
 
     behaviors {
@@ -119,22 +124,22 @@
         default_layer {
             bindings = <
 &mt TAB Q           &kp W         &kp E               &kp R    &kp T                                    &kp Y        &kp U  &kp I                &kp O          &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D               &kp F    &kp G                                    &kp H        &kp J  &kp K                &kp L          &kp SEMICOLON
+&mt LEFT_CONTROL A  &kp S         &kp D               &kp F    &lt 3 G                                  &kp H        &kp J  &kp K                &kp L          &kp SEMICOLON
 &mt LEFT_SHIFT Z    &kp X         &kp C               &kp V    &kp B                                    &kp N        &kp M  &kp COMMA            &kp DOT        &kp SLASH
 &mt LCTRL ESC       &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 ENTER  &lt 2 TAB    &kp BACKSPACE  &lt 4 SPACE         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &mt RIGHT_SHIFT TILDE
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
 
         //1
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
             >;
         };
 
