@@ -52,17 +52,14 @@
     };
 };
 
-
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 5 250>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 5 250>; };
 
 &trackball_listener {
     scroller {
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -128,10 +125,10 @@
 
         default_layer {
             bindings = <
-&mt TAB Q           &kp W         &kp E               &kp R    &mt LANGUAGE_2 T                                &mt LANGUAGE_1 Y  &kp U  &kp I                &kp O          &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D               &kp F    &lt 3 G                                         &kp H             &kp J  &kp K                &kp L          &kp SEMICOLON
-&mt LEFT_SHIFT Z    &kp X         &kp C               &kp V    &kp B                                           &kp N             &kp M  &kp COMMA            &kp DOT        &kp SLASH
-&mt LCTRL ESC       &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 SPACE       &lt 2 ENTER    &kp BACKSPACE  &lt 4 TAB                &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &mt RIGHT_SHIFT TILDE
+&mt TAB Q           &kp W         &kp E               &kp R    &mt LANGUAGE_2 T                                &mt LANGUAGE_1 Y    &kp U  &kp I                &kp O                    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D               &kp F    &lt 3 G                                         &kp H               &kp J  &kp K                &kp L                    &kp SEMICOLON
+&mt LEFT_SHIFT Z    &kp X         &kp C               &kp V    &kp B                                           &kp N               &kp M  &kp COMMA            &kp DOT                  &kp SLASH
+&mt LCTRL ESC       &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 SPACE       &lt 2 ENTER    &kp BACKSPACE  &lt 4 LEFT_CONTROL         &lt 6 RIGHT_BRACKET  &mt RIGHT_ALT BACKSLASH  &mt RIGHT_SHIFT TILDE
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
@@ -198,6 +195,7 @@
             // Encoder zoom
             // 時計回り: 拡大 Ctrl + +
             // 反時計回り: 縮小 Ctrl + -
+
             sensor-bindings = <&re_kp LC(KP_PLUS) LC(KP_MINUS)>;
         };
 
