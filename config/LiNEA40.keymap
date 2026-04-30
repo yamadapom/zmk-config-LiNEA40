@@ -198,7 +198,7 @@
             // Encoder zoom
             // 時計回り: 拡大 Ctrl + +
             // 反時計回り: 縮小 Ctrl + -
-            sensor-bindings = <&re_kp LC(KP_PLUS) LC(KP_MINUS)>;;
+            sensor-bindings = <&re_kp LC(KP_PLUS) LC(KP_MINUS)>;
         };
 
         //6
