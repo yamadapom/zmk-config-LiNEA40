@@ -52,6 +52,11 @@
     };
 };
 
+
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 5 250>;
+};
+
 &trackball_listener {
     scroller {
         layers = <SCROLL>;
