@@ -181,6 +181,10 @@
                 &kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                       &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
                 &trans    &trans                  &trans        &trans                   &trans  &trans    &trans  &kp NUMBER_0                   &kp NUMBER_0  &kp DOT       &kp QUESTION
             >;
+            // Encoder zoom
+            // 時計回り: 拡大 Ctrl + +
+            // 反時計回り: 縮小 Ctrl + -
+            sensor-bindings = <&re_kp LC(KP_PLUS) LC(KP_MINUS)>;
         };
 
         //6
