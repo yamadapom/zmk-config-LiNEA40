@@ -190,7 +190,10 @@
 &trans  &trans          &trans        &trans           &trans  &trans    &trans  &trans                              &trans          &trans           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            // Encoder zoom
+            // 時計回り: 拡大 Ctrl + +
+            // 反時計回り: 縮小 Ctrl + -
+            sensor-bindings = <&re_kp LC(KP_PLUS) LC(KP_MINUS)>;;
         };
 
         //6
