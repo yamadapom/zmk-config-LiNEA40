@@ -9,10 +9,7 @@
     require-prior-idle-ms = <200>;
 
     excluded-positions = <
-        15 // H
         16 // J
-        17 // K
-        18 // L
         19 // ;
     >;
 };
