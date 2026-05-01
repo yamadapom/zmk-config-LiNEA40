@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -68,8 +68,8 @@
     combos {
         compatible = "zmk,combos";
 
-        ZenkakuHankaku {
-            bindings = <&kp GRAVE>;
+        shifrt {
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <11 12>;
         };
 
@@ -98,8 +98,8 @@
             key-positions = <26 27>;
         };
 
-        LeftClick {
-            bindings = <&mkp MB1>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <15 16>;
         };
     };
