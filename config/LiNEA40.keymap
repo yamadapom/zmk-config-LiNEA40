@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -133,10 +133,10 @@
 
         default_layer {
             bindings = <
-&mt TAB Q           &kp W         &kp E               &kp R    &kp T                                           &kp Y               &kp U  &kp I             &kp O                &kp P
+&mt TAB Q                       &kp W         &kp E               &kp R    &kp T                                           &kp Y               &kp U  &kp I             &kp O                &kp P
 &mt_ctrl_a_slow LEFT_CONTROL A  &kp S         &kp D               &lt 3 F  &kp G                                           &kp H               &kp J  &kp K             &kp L                &kp RETURN
-&mt LEFT_SHIFT Z    &kp X         &kp C               &kp V    &kp B                                           &kp N               &kp M  &kp COMMA         &kp DOT              &kp SLASH
-&mt LCTRL ESC       &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 SPACE  &lt 2 LANGUAGE_2    &kp BACKSPACE  &lt 4 LEFT_CONTROL         &lt 6 LANGUAGE_1  &mt RIGHT_ALT MINUS  &kp TAB
+&mt LEFT_SHIFT Z                &kp X         &kp C               &kp V    &kp B                                           &kp N               &kp M  &kp COMMA         &kp DOT              &kp SLASH
+&mt LCTRL ESC                   &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 SPACE  &lt 2 LANGUAGE_2    &kp BACKSPACE  &lt 4 LEFT_CONTROL         &lt 6 LANGUAGE_1  &mt RIGHT_ALT MINUS  &kp TAB
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
@@ -181,10 +181,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                    &kp F6      &kp F7  &kp F8  &kp F9  &kp F10
-&kp F11  &kp F12  &trans  &trans  &trans                    &trans      &trans  &trans  &trans  &trans
-&trans   &trans   &trans  &trans  &trans                    &kp C_MUTE  &trans  &trans  &trans  &trans
-&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans              &trans  &trans  &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                    &kp F6     &kp F7     &kp F8     &kp F9  &kp F10
+&kp F11  &kp F12  &trans  &trans  &trans                    &kp LC(Z)  &kp LC(C)  &kp LC(P)  &trans  &kp LA(F4)
+&trans   &trans   &trans  &trans  &trans                    &kp LC(Y)  &trans     &trans     &trans  &kp DEL
+&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans                &trans     &trans  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
