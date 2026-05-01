@@ -10,7 +10,6 @@
 
     excluded-positions = <
         16 // J
-        19 // ;
     >;
 };
 
