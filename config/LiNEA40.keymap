@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -90,12 +90,12 @@
 
         PrevClick {
             bindings = <&mkp MB4>;
-            key-positions = <27 28>;
+            key-positions = <27 26>;
         };
 
         ClickNext {
             bindings = <&mkp MB5>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
         };
 
         tab {
@@ -123,7 +123,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <350>;
             bindings = <&kp>, <&kp>;
         };
     };
