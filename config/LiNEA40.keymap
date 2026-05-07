@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -157,10 +157,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION             &kp AT           &kp HASH         &kp DOLLAR     &kp PERCENT                      &kp CARET          &kp AMPERSAND   &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp SEMICOLON  &kp SEMICOLON                    &kp SQT            &kp PLUS        &kp MINUS            &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS       &kp SQT                          &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp SLASH            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
-&trans                      &trans           &trans           &trans         &trans         &trans    &trans  &trans                             &kp INTERNATIONAL_3  &kp PIPE              &kp TILDE
+&kp EXCLAMATION             &kp AT           &kp HASH         &kp DOLLAR  &kp PERCENT                    &kp CARET          &kp AMPERSAND   &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp EQUAL   &kp PLUS                       &kp SQT            &kp MINUS       &kp SEMICOLON        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp GRAVE   &kp MINUS                      &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp COLON            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
+&trans                      &trans           &trans           &trans      &trans       &trans    &trans  &trans                             &kp INTERNATIONAL_3  &kp PIPE              &kp TILDE
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
