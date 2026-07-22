@@ -52,7 +52,7 @@
     };
 };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 1 250>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 1 5000>; };
 
 &trackball_listener {
     scroller {
