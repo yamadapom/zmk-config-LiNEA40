@@ -32,11 +32,6 @@
     };
 };
 
-// マウスクリックでも10秒タイマーを更新
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 1 10000>;
-};
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
