@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -68,8 +68,8 @@
     combos {
         compatible = "zmk,combos";
 
-        shifrt {
-            bindings = <&kp LEFT_SHIFT>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
 
@@ -80,7 +80,7 @@
 
         CenterClick {
             bindings = <&mkp MB3>;
-            key-positions = <17 16>;
+            key-positions = <16 18>;
         };
 
         RightClick {
@@ -104,7 +104,7 @@
         };
 
         delete-left {
-            bindings = <&kp DELETE>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <12 13>;
         };
 
@@ -116,6 +116,11 @@
         undo-lefft {
             bindings = <&kp LC(Z)>;
             key-positions = <3 2>;
+        };
+
+        lang1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <17 16>;
         };
     };
 
