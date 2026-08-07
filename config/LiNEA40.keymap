@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -193,10 +193,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION             &kp AT           &kp HASH         &kp DOLLAR  &kp PERCENT                    &kp CARET          &kp AMPERSAND   &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp EQUAL   &kp PLUS                       &kp SQT            &kp MINUS       &kp SEMICOLON        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp GRAVE   &kp MINUS                      &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp COLON            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
-&trans                      &trans           &trans           &trans      &trans       &trans    &trans  &trans                             &kp INTERNATIONAL_3  &kp PIPE              &kp TILDE
+&kp EXCLAMATION             &kp AT                &kp HASH         &kp DOLLAR  &kp PERCENT                    &kp CARET          &kp AMPERSAND   &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH                   &kp NON_US_BACKSLASH  &kp KP_NUMBER_5  &kp EQUAL   &kp PLUS                       &kp SQT            &kp MINUS       &kp SEMICOLON        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2  &kp GRAVE   &kp MINUS                      &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp COLON            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
+&trans                      &trans                &trans           &trans      &trans       &trans    &trans  &trans                             &kp INTERNATIONAL_3  &kp PIPE              &kp TILDE
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -219,7 +219,7 @@
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                              &kp F6     &kp F7     &kp F8     &kp F9                &kp F10
 &kp F11  &kp F12  &trans  &trans  &kp LC(NUMBER_6)                    &kp LC(Z)  &kp LC(C)  &kp LC(V)  &kp LG(TAB)           &kp LA(F4)
-&trans   &trans   &trans  &trans  &trans                              &kp LC(Y)  &trans     &trans     &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)
+&trans   &trans   &trans  &trans  &kp LC(NUMBER_2)                    &kp LC(Y)  &trans     &trans     &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)
 &trans   &trans   &trans  &trans  &trans            &trans    &trans  &trans                &trans     &trans                &trans
             >;
 
