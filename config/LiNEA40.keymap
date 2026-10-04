@@ -16,6 +16,7 @@
 #define WIRELESS 6
 
 // Home row mods: 反対の手+最下段のキーでだけホールド扱いにする
+
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
 #define THUMBS 30 31 32 33 34 35 36 37 38 39 40
@@ -64,7 +65,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -192,10 +193,10 @@
 
         default_layer {
             bindings = <
-&kp Q                          &kp W         &kp E         &kp R         &kp T                                           &kp Y             &kp U         &kp I         &kp O                &kp P
-&kp A                          &kp S         &hml LCTRL D  &hml LSHFT F  &kp G                                           &kp H             &hmr RSHFT J  &hmr RCTRL K  &kp L                &kp RETURN
-&mt_shift_z_slow LEFT_SHIFT Z  &kp X         &kp C         &lt 3 V       &kp B                                           &kp N             &kp M         &kp COMMA     &kp DOT              &mt RIGHT_SHIFT SLASH
-&mt LCTRL ESC                  &kp LEFT_WIN  &kp LEFT_ALT  &kp INS       &lt 5 SPACE  &lt 2 LANGUAGE_2    &kp BACKSPACE  &lt 4 LANGUAGE_1                &lt 6 SEMI    &mt RIGHT_ALT MINUS  &kp TAB
+&kp Q                          &kp W         &kp E         &kp R         &kp T                                           &kp Y             &kp U              &kp I                &kp O                &kp P
+&kp A                          &kp S         &hml LCTRL D  &hml LSHFT F  &kp G                                           &kp H             &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &kp L                &kp RETURN
+&mt_shift_z_slow LEFT_SHIFT Z  &kp X         &kp C         &lt 3 V       &kp B                                           &kp N             &kp M              &kp COMMA            &kp DOT              &mt RIGHT_SHIFT SLASH
+&mt LCTRL ESC                  &kp LEFT_WIN  &kp LEFT_ALT  &kp INS       &lt 5 SPACE  &lt 2 LANGUAGE_2    &kp BACKSPACE  &lt 4 LANGUAGE_1                     &lt 6 SEMI           &mt RIGHT_ALT MINUS  &kp TAB
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
