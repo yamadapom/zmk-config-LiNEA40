@@ -66,7 +66,7 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-            <&zip_xy_to_scroll_mapper>;
+            <&zip_xy_to_scroll_mapper>; 
     };
 };
 
@@ -152,7 +152,7 @@
         mt_shift_z_slow: mod_tap_shift_z_slow {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <150>;
             retro-tap;
