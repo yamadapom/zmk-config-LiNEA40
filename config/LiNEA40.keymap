@@ -65,7 +65,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -230,7 +230,7 @@
 
         CURSOR {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN    &kp LG(RIGHT_ARROW)                    &kp KP_EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_SLASH
+&kp LG(LEFT_ARROW)  &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN    &kp LG(RIGHT_ARROW)                    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_SLASH
 &trans              &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans                                 &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY
 &trans              &kp HOME        &mkp MB2      &kp END          &trans                                 &kp UNDER     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS
 &trans              &trans          &trans        &trans           &trans               &trans    &trans  &kp NUMBER_0                &kp DOT       &kp DOT       &kp KP_PLUS
@@ -241,10 +241,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                              &kp F6     &kp F7     &kp F8     &kp F9                &kp F10
-&kp F11  &kp F12  &trans  &trans  &kp LC(NUMBER_6)                    &kp LC(Z)  &kp LC(C)  &kp LC(V)  &kp LG(TAB)           &trans
-&trans   &trans   &trans  &trans  &kp LC(NUMBER_2)                    &kp LC(Y)  &trans     &trans     &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)
-&trans   &trans   &trans  &trans  &trans            &trans    &trans  &trans                &trans     &trans                &kp LA(F4)
+&kp F1                &kp F2                 &kp F3  &kp F4  &kp F5                              &kp F6     &kp F7     &kp F8     &kp F9                &kp F10
+&kp F11               &kp F12                &trans  &trans  &kp LC(NUMBER_6)                    &kp LC(Z)  &kp LC(C)  &kp LC(V)  &kp LG(TAB)           &trans
+&kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &trans  &trans  &kp LC(NUMBER_2)                    &kp LC(Y)  &trans     &trans     &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)
+&trans                &trans                 &trans  &trans  &trans            &trans    &trans  &trans                &trans     &trans                &kp LA(F4)
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
@@ -282,10 +282,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
+&kp F2  &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN    &kp F4                    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_SLASH
+&trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans                    &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MULTIPLY
+&trans  &kp HOME        &mkp MB2      &kp END          &trans                    &kp UNDER     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MINUS
+&trans  &trans          &trans        &trans           &trans  &trans    &trans  &kp NUMBER_0                &kp DOT       &kp DOT       &kp KP_PLUS
             >;
         };
     };
