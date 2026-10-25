@@ -265,7 +265,7 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION             &sym_h AT             &sym_h HASH         &kp DOLLAR  &kp PERCENT                    &kp CARET          &kp AMPERSAND   &sym_h ASTERISK         &sym_pair LPAR RPAR  &kp RIGHT_PARENTHESIS
+&kp EXCLAMATION             &sym_h AT             &sym_h HASH         &kp DOLLAR  &kp PERCENT                    &kp CARET          &kp AMPERSAND   &sym_h ASTERISK         &jp_paren  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp NON_US_BACKSLASH  &kp GRAVE        &kp EQUAL   &kp PLUS                       &kp SQT            &kp MINUS       &kp SEMICOLON        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2  &kp GRAVE   &kp MINUS                      &sym_h DOUBLE_QUOTES  &kp UNDERSCORE  &sym_h COLON            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
 &trans                      &trans                &trans           &trans      &trans       &trans    &trans  &trans                             &kp INTERNATIONAL_3  &kp PIPE              &kp TILDE
