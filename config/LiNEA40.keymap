@@ -65,7 +65,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -190,49 +190,35 @@
 
     macros {
         // 半角記号：IMEをOFF（半角英数）にしてから指定記号を入力
+
         sym_h: sym_h {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             wait-ms = <40>;
             tap-ms = <10>;
-
-            bindings =
-                <&kp LANGUAGE_2>,
-                <&macro_param_1to1>,
-                <&kp MACRO_PLACEHOLDER>;
+            bindings = <&kp LANGUAGE_2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
 
         // 半角括弧ペア：IMEをOFF → 開き括弧 → 閉じ括弧 → カーソルを中へ
         // 例：&sym_pair LPAR RPAR は () を入力してカーソルを括弧内に移動
+
         sym_pair: sym_pair {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             wait-ms = <40>;
             tap-ms = <10>;
-
-            bindings =
-                <&kp LANGUAGE_2>,
-                <&macro_param_1to1>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_param_2to1>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER &kp LEFT_ARROW>;
         };
 
         // 半角括弧ペア：IMEをOFF → () → カーソルを中へ → IMEをON
         // 日本語入力中でも半角()を入力し、日本語入力に戻す
+
         jp_paren: jp_paren {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-
-            bindings =
-                <&kp LANGUAGE_2>,
-                <&kp LPAR>,
-                <&kp RPAR>,
-                <&kp LEFT_ARROW>,
-                <&kp LANGUAGE_1>;
+            bindings = <&kp LANGUAGE_2 &kp LPAR &kp RPAR &kp LEFT_ARROW &kp LANGUAGE_1>;
         };
     };
 
@@ -265,10 +251,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION             &sym_h AT             &sym_h HASH         &kp DOLLAR  &kp PERCENT                    &kp CARET          &kp AMPERSAND   &sym_h ASTERISK         &jp_paren  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp NON_US_BACKSLASH  &kp GRAVE        &kp EQUAL   &kp PLUS                       &kp SQT            &kp MINUS       &kp SEMICOLON        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2  &kp GRAVE   &kp MINUS                      &sym_h DOUBLE_QUOTES  &kp UNDERSCORE  &sym_h COLON            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
-&trans                      &trans                &trans           &trans      &trans       &trans    &trans  &trans                             &kp INTERNATIONAL_3  &kp PIPE              &kp TILDE
+&kp EXCLAMATION             &sym_h AT             &sym_h HASH      &kp DOLLAR  &kp PERCENT                    &kp CARET             &kp AMPERSAND      &sym_h ASTERISK      &jp_paren             &kp RIGHT_PARENTHESIS
+&kp SLASH                   &kp NON_US_BACKSLASH  &kp GRAVE        &kp EQUAL   &kp PLUS                       &kp SQT               &kp MINUS          &kp SEMICOLON        &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_NUMBER_2  &kp GRAVE   &kp MINUS                      &sym_h DOUBLE_QUOTES  &sym_h UNDERSCORE  &sym_h COLON         &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
+&trans                      &trans                &trans           &trans      &trans       &trans    &trans  &trans                                   &kp INTERNATIONAL_3  &kp PIPE              &kp TILDE
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
